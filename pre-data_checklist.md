@@ -4,6 +4,15 @@ This is a very basic set of questions that should be asked PRIOR to
 starting any investigation of a new dataset. Answering these questions
 will help you to avoid mistakes later in the process.
 
+Stakeholders:
+  + Who is interested in these data?
+  + Why do they care about these data? What are their needs?
+  + What are relevant questions to ask of the data?
+  + What is "coinvincing" evidence to the stakeholders?
+  + What conventions/language/terminology are the stakeholders accustomed to?
+  + What impact will answering these questions have? Is this life and
+    death, or an annoyance?
+
 What are the data?
   + How many observations?
   + What are the observational units?
@@ -23,10 +32,6 @@ Scope:
   + What are potential biases in the data?
   + Do the data represent an entire population? A sample?
   + How were the data collected?
-  
-Stakeholders:
-  + Who is interested in these data?
-  + What are relevant questions to ask?
-  + What is "coinvincing" evidence to the stakeholders?
-  + What conventions/language/terminology are the stakeholders accustomed to?
+  + How broad are the data? Are there limits to the data's coverage of
+    the topic of interest?
   
