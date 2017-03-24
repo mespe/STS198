@@ -1,11 +1,16 @@
-#STS198: Data Sense and Storytelling with Data
+# Data Sense and Exploration: Critical Storytelling with Data using R
 
-Matt Espe
+CRN: 89744
+
+Instructor: Matthew Espe (mespe@ucdavis.edu)
+Lecture: MW 2:10-4:00pm. Young 194
+
+Office hours: TBA 360 Shields Library (Data Science Initiative space)
 
 Spring Quarter 2017
 
 UC Davis
 
-##Overview
+## Overview
 
 This is the class repository for STS198.
