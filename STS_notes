@@ -5,6 +5,7 @@ Datasets: Need 7 datasets for class (roughly 1.5 weeks per dataset)
  - 2016 election polls: ~1600 polls at state and national level
  - CollegeScorecard: 132,421 x 1743 - lots here, clean. Includes data on cost, earnings, loans, and repayment.
  - Health care costs: 163,066 x 12 - Costs throughout the US on the top 100 billed procedures
+ - Bike/ped accidents 
 
 Other ideas:
  - demographic

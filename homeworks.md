@@ -6,7 +6,7 @@ under the same heading.
 
 Homework | Dataset | Goal
 --- | --- | --- 
-1 | Airlines | Pre-analysis steps, data-structure, expectations of data
+1 | Airlines | Pre-analysis steps, exploring data-structure, expectations of data
 2 | Airlines | Basic summaries, subsetting, tables
 3 | Health costs | Basic plots
 4 | Health costs | Effective communication, facet plotting.
