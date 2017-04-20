@@ -18,4 +18,4 @@ sort(table(airline$DEST_STATE_ABR))
 
 CAarrivals <- airline[airline$DEST_STATE_ABR == "CA",]
 
-saveRDS(CAarrivals, file = "../data/CA_arrivals2016.rds")
+save(CAarrivals, file = "../data/CA_arrivals2016.rda")
