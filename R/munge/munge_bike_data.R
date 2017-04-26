@@ -1,11 +1,11 @@
 # Munging the data for bike fatalities
 # FARS data
-
-list.files("../data/FARS2015/")
+data_dir = "../../data/"
+list.files(paste0(data_dir, "FARS2015/"))
 
 #system2("pdftotext -f 412 -l 434 -layout ../data/FARS2015/USERGUIDE.pdf ../data/FARS2015/PBTYPE.txt")
 
-doc = readLines("../data/FARS2015/PBTYPE.txt")
+doc = readLines(paste0(data_dir, "FARS2015/PBTYPE.txt"))
 
 # Find the sections
 sect_title = grep("SAS Name: ", doc)
@@ -30,7 +30,7 @@ sects = lapply(sects, function(x){
 })
 
 # Replace codes with character explanations
-bike = read.csv("../data/FARS2015/pbtype.csv", stringsAsFactors = FALSE)
+bike = read.csv(paste0(data_dir, "FARS2015/pbtype.csv"), stringsAsFactors = FALSE)
 
 cc = colnames(bike)
 
@@ -59,7 +59,7 @@ colnames(bike2) = cc
 ################################################################################
 # Pickup state names 
 
-states = readLines("../data/FARS2015/state_tab.txt")
+states = readLines(paste0(data_dir, "FARS2015/state_tab.txt"))
 states = grep("[0-9]{2} [A-Z]", states, value = TRUE)
 states = unlist(strsplit(states, " {6,}"))
 states = gsub("^ ", "", states)
@@ -69,14 +69,16 @@ states[,1] = gsub("0([0-9])", "\\1", states[,1])
 
 bike2$STATE = replace_code(bike2$STATE, states)
 
-################################################################################
+bike = bike2
+save(bike, file = paste0(data_dir, "bike_FARS.Rda"))
 
+################################################################################
 # Distracted drving data
 
 
-distracted = read.csv("../data/FARS2015/distract.csv", stringsAsFactors = FALSE)
+distracted = read.csv(paste0(data_dir, "FARS2015/distract.csv"), stringsAsFactors = FALSE)
 
-doc = readLines("../data/FARS2015/distracted_tab.txt")
+doc = readLines(paste0(data_dir, "FARS2015/distracted_tab.txt"))
 
 dist_tab = grep(" +[0-9]+ +", doc, value = TRUE)
 
@@ -93,9 +95,9 @@ distracted$STATE = replace_code(distracted$STATE, states)
 
 ################################################################################
 
-disabled = read.csv("../data/FARS2015/drimpair.csv", stringsAsFactors = FALSE)
+disabled = read.csv(paste0(data_dir, "FARS2015/drimpair.csv"), stringsAsFactors = FALSE)
 
-doc = readLines("../data/FARS2015/disable_tab.txt")
+doc = readLines(paste0(data_dir, "FARS2015/disable_tab.txt"))
 
 disable_tab = grep(" +[0-9]+ +", doc, value = TRUE)
 
@@ -113,6 +115,7 @@ disabled$DRIMPAIR = replace_code(disabled$DRIMPAIR, disable_tab)
 idx = match(distracted$ST_CASE, disabled$ST_CASE)
 distracted$DRIMPAIR = disabled$DRIMPAIR[idx]
 
+save(distracted, file = paste0(data_dir, "distracted.Rda"))
 
 # # Want to 
 
