@@ -24,7 +24,7 @@ plotMap = function(data, states)
     ggplot(data = map.data, aes(map_id = state)) +
         geom_map(aes(fill = x), map = fifty_states) +
         expand_limits(x = fifty_states$long, y = fifty_states$lat) +
-        coord_map() +
+        coord_map(projection = "mercator") +
         theme_bw() +
         fifty_states_inset_boxes() 
 }
