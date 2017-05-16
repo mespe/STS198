@@ -1,0 +1,70 @@
+"Location","White","Black","Hispanic","Other","Total"
+"United States",0.09,0.24,0.21,0.14,0.14
+"Alabama",0.12,0.26,0.26,NA,0.17
+"Alaska",0.06,NA,NA,0.15,0.09
+"Arizona",0.09,NA,0.28,0.23,0.17
+"Arkansas",0.12,0.3,NA,0.2,0.16
+"California",0.09,0.19,0.2,0.11,0.14
+"Colorado",0.07,NA,0.17,NA,0.1
+"Connecticut",0.06,NA,0.22,NA,0.09
+"Delaware",0.08,0.18,0.19,NA,0.11
+"District of Columbia",0.04,0.28,0.12,0.13,0.17
+"Florida",0.11,0.24,0.22,0.21,0.16
+"Georgia",0.09,0.31,0.27,0.14,0.18
+"Hawaii",0.07,NA,0.18,0.11,0.11
+"Idaho",0.11,0,0.25,NA,0.12
+"Illinois",0.07,0.23,0.17,0.14,0.11
+"Indiana",0.12,0.28,0.19,NA,0.14
+"Iowa",0.09,NA,0.18,NA,0.1
+"Kansas",0.11,0.27,0.23,0.21,0.14
+"Kentucky",0.17,0.36,0.42,NA,0.2
+"Louisiana",0.12,0.31,0.16,0.22,0.19
+"Maine",0.12,0,NA,NA,0.12
+"Maryland",0.06,0.17,NA,NA,0.1
+"Massachusetts",0.08,0.17,0.3,0.19,0.12
+"Michigan",0.09,0.26,0.25,0.15,0.13
+"Minnesota",0.05,NA,0.23,NA,0.08
+"Mississippi",0.14,0.27,NA,0.23,0.19
+"Missouri",0.07,0.25,0.19,NA,0.1
+"Montana",0.1,NA,NA,0.33,0.12
+"Nebraska",0.07,0.46,0.22,NA,0.1
+"Nevada",0.08,0.3,0.18,NA,0.13
+"New Hampshire",0.06,NA,NA,NA,0.07
+"New Jersey",0.07,0.21,0.22,NA,0.11
+"New Mexico",0.1,0.39,0.24,0.3,0.2
+"New York",0.1,0.22,0.23,0.16,0.14
+"North Carolina",0.1,0.24,0.27,0.15,0.15
+"North Dakota",0.09,NA,0.26,NA,0.11
+"Ohio",0.1,0.34,0.27,0.16,0.14
+"Oklahoma",0.1,NA,0.26,0.23,0.15
+"Oregon",0.1,NA,0.21,NA,0.12
+"Pennsylvania",0.09,0.25,0.32,0.14,0.12
+"Rhode Island",0.08,0.23,0.24,NA,0.12
+"South Carolina",0.09,0.27,NA,NA,0.14
+"South Dakota",0.08,NA,0.37,0.46,0.14
+"Tennessee",0.13,0.21,0.2,NA,0.15
+"Texas",0.08,0.23,0.21,0.14,0.15
+"Utah",0.08,NA,0.19,NA,0.09
+"Vermont",0.1,NA,NA,NA,0.11
+"Virginia",0.07,0.21,0.15,0.08,0.11
+"Washington",0.09,NA,0.15,0.16,0.11
+"West Virginia",0.14,0.25,NA,0.24,0.15
+"Wisconsin",0.09,0.2,0.26,0.09,0.11
+"Wyoming",0.09,NA,0.18,NA,0.1
+"",NA,NA,NA,NA,NA
+"Notes",NA,NA,NA,NA,NA
+"In this analysis, income (mostly categorized as a percent of the federal poverty level) is aggregated by Census-defined family units. Analyzing income by family unit captures income available to a group of people who are likely sharing resources. However, family units may not be the appropriate measure for capturing eligibility for health insurance.  Eligibility for health insurance is more accurately estimated using ""health insurance units,"" which may be counted differently for different types of insurance (such as Medicaid or employer coverage).",NA,NA,NA,NA,NA
+"",NA,NA,NA,NA,NA
+"The U.S. Census Bureau's poverty threshold for a family with two adults and one child was $19,078 in 2015.  This is the official measurement of poverty used by the Federal Government, and the measure used for most poverty-based data presented on State Health Facts.  The Department of Health and Human Services (HHS) produces simplified - but very similar - versions of these poverty thresholds called ""poverty guidelines"" that are used to assess eligibility for income-based programs such as Medicaid.  For more information on measures of poverty, please see the detailed description provided by HHS: [http://aspe.hhs.gov/poverty/faq.cfm](http://aspe.hhs.gov/poverty/faq.cfm). ",NA,NA,NA,NA,NA
+"",NA,NA,NA,NA,NA
+"Data may not sum to totals due to rounding.",NA,NA,NA,NA,NA
+"",NA,NA,NA,NA,NA
+"Sources",NA,NA,NA,NA,NA
+"Kaiser Family Foundation estimates based on the Census Bureau's March 2016 Current Population Survey (CPS: Annual Social and Economic Supplements).",NA,NA,NA,NA,NA
+"",NA,NA,NA,NA,NA
+"Definitions",NA,NA,NA,NA,NA
+"Persons of Hispanic origin may be of any race; all other racial/ethnic groups are non-Hispanic. ",NA,NA,NA,NA,NA
+"",NA,NA,NA,NA,NA
+"*Other* includes Asians, Native Hawaiians and Pacific Islanders, American Indians, Aleutians, Eskimos and persons of ""Two or More Races"". These groups have been combined due to their small populations in many states which prevent meaningful statistical analyses of the groups individually.",NA,NA,NA,NA,NA
+"",NA,NA,NA,NA,NA
+"*N/A*: Estimates with relative standard errors greater than 30% are not provided.",NA,NA,NA,NA,NA
