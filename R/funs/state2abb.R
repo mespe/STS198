@@ -5,5 +5,5 @@ state2abb = function(stateName)
 
 abb2state = function(stateAbb)
 {
-    state.abb[match(tolower(stateAbb), tolower(state.abb))]
+    state.name[match(tolower(stateAbb), tolower(state.abb))]
 }
