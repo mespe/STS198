@@ -1,7 +1,7 @@
 # Script to clean up and subset the airline data to be
 # a bit more manageable for the students
 
-airline <- read.csv("../data/273586099_T_ONTIME.csv", stringsAsFactors = FALSE)
+airline <- read.csv("../../data/273586099_T_ONTIME.csv", stringsAsFactors = FALSE)
 str(airline)
 
 airline$FL_DATE <- as.Date(airline$FL_DATE)

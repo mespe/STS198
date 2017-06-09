@@ -5,6 +5,7 @@ starting any investigation of a new data set. Answering these questions
 will help you to avoid mistakes later in the process.
 
 Stakeholders:
+
   + Who is interested in these data?
   + Why do they care about these data? What are their needs?
   + What are relevant questions to ask of the data?
@@ -14,6 +15,7 @@ Stakeholders:
     death, or an annoyance?
 
 What are the data?
+  
   + How many observations?
   + What are the observational units?
   + How many variables?
@@ -26,6 +28,7 @@ What are the data?
   + Is there variability in the data? 
   
 Scope:
+  
   + Do these data address the question at hand?
   + Are there missing observations, observational units, or other
     important variables? 

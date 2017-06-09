@@ -130,7 +130,7 @@ ggplot(last_month, aes(x = as.Date(end.date),
     geom_point(aes(y = clinton), color = "blue") +
     geom_smooth(aes(y = clinton), color = "blue", se = FALSE) +
     theme_bw() +
-    geom_hline(yintercept= 50, type = "dashed") +
+    geom_hline(yintercept = 50, type = "dashed") +
     facet_wrap(~state) +
     ylim(c(25,75))
 
@@ -162,7 +162,7 @@ ggplot(last_month, aes(x = as.Date(end.date),
     geom_point(aes(y = clinton), color = "blue") +
     # geom_smooth(aes(y = clinton), color = "blue", se = FALSE) +
     theme_bw() +
-    geom_hline(yintercept= 50, type = "dashed") +
+    geom_hline(yintercept= 50) +
     facet_wrap(~state) +
     ylim(c(25,75)) +
     geom_hline(data = results, aes(yintercept = Trump_pct), color = "red") + 
