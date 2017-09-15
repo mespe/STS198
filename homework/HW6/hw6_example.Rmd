@@ -1,0 +1,46 @@
+---
+output: pdf
+geometry: margin=1in
+---
+
+# Example for Post-data 6
+
+Bob Smith
+
+STS 198
+
+22 May 2017
+
+## This title summarizes the main findings without being boring
+
+The audience for this piece will be generalist ("aware of the topic,
+but looking for an overview understanding and major themes"). Unlike
+the novice, you can assume the audience knows a little bit more (the
+election has been highly covered over the last 2 years). You should
+still tell a compelling story, but can have more technical details.
+
+You should first outline the explanation that you will be looking
+into. It might be helpful to give a brief overview of why this was of
+interest to you, and what impact it will have if it is supported by
+evidence or not. 
+
+Remember that it is not always best to lead with the conclusion. You
+want the reader to follow your logic, not just trust your
+conclusions. If you look at the example piece I posted, you can see
+that the authors lead the reader through a series of graphs, allowing
+the reader to see the evidence in stages. This can be a more effective
+way of communicating results than just giving facts and hoping the
+reader trusts you. Remember, visualizations are important, as is
+referring to them when appropriate (See Fig. 1).
+
+
+```{r echo = FALSE, fig = TRUE, fig.width = 4, fig.height = 4, fig.pos = "ht", fig.cap = "Less formal caption, but still points out the major elements that you want the reader to see in the plot"}
+plot(rnorm(100),
+     ylab = "Value",
+     xlab = "Index",
+     main = "Random numbers")
+
+
+```
+
+

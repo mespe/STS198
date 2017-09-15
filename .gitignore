@@ -1,0 +1,7 @@
+*.aux
+*.log
+*.aux
+*.tex
+*.pdf
+#*.*#
+.Rhistory

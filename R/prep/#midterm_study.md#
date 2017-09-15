@@ -1,0 +1,103 @@
+---
+geometry: margin=1in
+---
+
+# Midterm study guide: R only
+
+*STS198: Spring 2017*
+
+You should be familiar with all the functions we have covered in
+class:
+  * ls()
+  * head()
+  * tail()
+  * length()
+  * unique()
+  * table()
+  * sort()
+  * summary()
+  * which()
+  * c()
+  * paste()
+  * "==" (logical comparison)
+  * "[" (subset)
+  * names(), colnames(), rownames()
+  * subset()
+  * !=
+  * \>= 
+  * <= 
+  * \&
+  * |
+  * tapply()
+  * ggplot()
+	- geom_histogram()
+	- geom_boxplot()
+	- geom_points()
+	- geom_density()
+	- geom_violin()
+	- geom_bar()
+	- geom_smooth()
+
+### You should be able to answer questions such as:
+
+```r
+x = c(1,3,5,9)
+
+```
+
+  * What does \texttt{x[4]} equal?
+  * How many elements are in the output of \texttt{x == 5}?
+  * What data type is \texttt{x}? (numeric, logical, character)
+  * What is the result of \texttt{x[x >= 5]}?
+  
+```r
+str(mtcars)  
+head(mtcars)
+```
+
+  * What is the expected length of \texttt{mtcars$cyl}?
+  * How many rows are there in \texttt{mtcars}? Columns?
+  
+```r
+table(mtcars$cyl)
+```
+  * How many rows are in the result of \texttt{subset(mtcars, cyl ==
+    4)}? How many columns?
+
+```{r echo=FALSE}
+library(ggplot2)
+ggplot(mtcars, aes(x = factor(cyl))) +
+    geom_bar() +
+    coord_flip()
+
+```
+
+  * Which code chunk produced the above plot?
+  
+```{r eval=FALSE}
+
+ggplot(mtcars, aes(x = factor(cyl))) +
+    geom_bar() +
+    coord_flip()
+
+ggplot(mtcars, aes(x = factor(cyl),
+                   fill = factor(am))) +
+    geom_bar() +
+    coord_flip()
+
+ggplot(mtcars, aes(x = factor(cyl))) +
+    geom_bar() 
+
+ggplot(mtcars, aes(x = cyl)) +
+    geom_point(stat = "count")
+
+```
+
+```r
+table(mtcars$gear)
+```
+
+  * \texttt{sort(table(mtcars$gear), decreasing = FALSE)[1]} returns?
+  * \texttt{sort(table(mtcars$gear), decreasing = TRUE)[1]} returns?
+  
+

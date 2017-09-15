@@ -1,0 +1,273 @@
+% template from
+% http://www-users.math.umn.edu/~rogness/math8001/handouts/math_exam_template.tex
+% adapted
+
+\documentclass[11pt]{exam}
+\RequirePackage{amssymb, amsfonts, amsmath, latexsym, verbatim, xspace, setspace}
+\RequirePackage{tikz, pgflibraryplotmarks}
+\usepackage[margin=1in]{geometry}
+
+\newcommand{\class}{STS-198}
+\newcommand{\term}{Spring 2017}
+\newcommand{\examnum}{Midterm}
+\newcommand{\examdate}{5/3/2017}
+
+\singlespacing
+
+% For an exam, we generally want to turn off paragraph indentation
+\parindent 0ex
+
+\begin{document} 
+
+% These commands set up the running header on the top of the exam pages
+\pagestyle{head}
+\firstpageheader{}{}{}
+\runningheader{\class}{\examnum\ - Page \thepage\ of \numpages}{\examdate}
+\runningheadrule
+
+\begin{flushright}
+\begin{tabular}{p{2.8in} r l}
+\textbf{\class} & \textbf{Name (Print):} & \makebox[2in]{\hrulefill}\\
+\textbf{\term} &&\\
+\textbf{\examnum} &&\\
+\textbf{\examdate} &&\\
+\end{tabular}\\
+\end{flushright}
+\rule[1ex]{\textwidth}{.1pt}
+
+
+This exam contains \numpages\ pages (including this cover page) and
+\numquestions\ problems.  Check to see if any pages are missing.  Enter
+all requested information on the top of this page, and put your initials
+on the top of every page, in case the pages become separated.\\
+
+\textbf{2pts EC for reading the instructions and adding your initials to
+  the top of the pages}\\
+
+
+You may \textit{not} use your notes or computer on this exam. Please
+keep your cell phone out of view for the duration of the exam. The
+instructor will notify you of the time elapsed and remaining.\\
+
+\begin{minipage}[t]{5in}
+\vspace{0pt}
+\begin{itemize}
+
+\item \textbf{Please answer all parts of the question.} Some questions
+  ask for both an answer and an explanation of your reasoning.
+  
+\item \textbf{You should have sufficient space for your answers.} No
+  question will require more than 5-6 sentences \textit{maximum}, so
+  if you find you need more space, consider if you are addressing the question.
+
+\item \textbf{The exam will be weighted, so answer the questions to
+    the best of your ability}. In most cases you will lose more points
+  leaving a question blank than attempting an answer.
+
+\item \textbf{Ask the instructor for clarification if needed.} Do
+  \textit{not} ask your neighbor. 
+
+\end{itemize}
+
+\end{minipage}
+
+\hfill
+\begin{minipage}[t]{2.3in}
+\vspace{0pt}
+%\cellwidth{3em}
+\gradetablestretch{2}
+\vqword{Problem}
+\addpoints % required here by exam.cls, even though questions haven't started yet.	
+\gradetable[v]%[pages]  % Use [pages] to have grading table by page instead of question
+
+\end{minipage}
+\newpage % End of cover page
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% See http://www-math.mit.edu/~psh/#ExamCls for full documentation, but the questions
+% below give an idea of how to write questions [with parts] and have the points
+% tracked automatically on the cover page.
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{questions}
+\section{Concepts}
+% Basic question
+\addpoints
+\question[5] Does one ``row'' in a data set always equal one
+observational unit? Why or why not?
+
+3 - No 
+
+1 - The display and orientation of the data can change, and should not
+define the observational unit.
+
+1 - The observational unit depends on the question you are asking
+\vfill
+
+\question[5] Why is it important to consider the source of the data
+(i.e., where the data came from or how it was generated)? What issues
+might arise if you do not think about this prior to making
+conclusions?
+
+Many acceptable answers, including: correct for biases, accurate
+presentation might depend on if the data represent a sample or the
+population, you need to know the units and measurements used, etc.
+
+Should have at least 2 reasons - 2.5 pts each
+
+\vfill
+
+
+% Question with parts
+\newpage
+\addpoints
+\question[10] Imagine you have explored a data set of internet speeds
+vs. cost of service for the Greater Sacramento Area. You found vast
+differences in value (speed per \$) and stability (outages per \$)
+between internet service providers (ISPs).
+\noaddpoints
+
+\textbf{Graded generously due to some poor wording in the question.}
+
+\begin{parts}
+\part[5] How would you present your findings to the head of a ISP
+trying to decide if her company will start to offer service in the
+area?
+
+3 - correctly classified as executive or managerial audience (either
+is acceptable).
+
+2 - Need to present big picture without bogging down into fine
+details. This audience does not often have time for day-to-day
+details, so they need efficient presentation that conveys the
+information to act on quickly.
+
+\vfill
+\part[5] How would your approach change if you were providing this
+information to consumers as part of a public information campaign to
+raise awareness of price gouging in the area?
+
+3 - correctly classified novice/general audience
+
+2 - cannot assume they have extensive background knowledge, so you
+need to present the overview of the major points in a way that is
+quickly approachable. In contrast to the executive audience, you need
+to compete more for the audiences attention (why do they care?).
+
+\vfill
+\end{parts}
+
+\newpage
+\addpoints
+\question[10] Data-driven stories rely on two pieces to be effective:
+\noaddpoints % If you remove this line, the grading table will show 20 points for this problem.
+\begin{parts}
+\part[3] What is the role of emotion?
+
+Many good answers possible - should touch on emotion makes the story
+be engaging and memorable.
+
+\vfill
+\part[3] What is the role of logic?
+
+Same as above - logic forms the foundation of the story and gives it
+factual support. Logic allows us to rationalize the story and make
+decisions in response after the emotional impact
+
+\vfill
+\part[4] Why should you not rely on only one of these pieces when
+creating a compelling narrative?
+
+2 - Without emotion, the story is not memorable even if it is factual
+and accurate
+
+2 - without logic, the story has not substance, and does not withstand
+scrutiny (lacks credibility).
+
+\vfill
+\end{parts}
+\newpage
+\section{Plots}
+\begin{figure}[ht]
+<<fig=TRUE, echo=FALSE, height=4>>=
+library(ggplot2)
+ggplot(mtcars, aes(x = factor(cyl),
+                   y = mpg,
+                   color = mpg)) +
+    geom_jitter(width=0.1) +
+    xlab("Numer of cylinders") +
+    theme_bw()
+
+@ 
+\caption{Mpg and cylinders.}
+\end{figure}
+\addpoints
+\question[10] Answer the questions below for the above plot.
+\noaddpoints
+\begin{parts}
+  \part[5] What does the plot do well? (List 3 with short explanation
+  why.)
+
+  Many possible answers - uses jitter to avoid over-plotting, scatter
+  plot is an OK way to display all the ``raw'' data, has labels and a
+  caption, not too cluttered, use of a color gradient shows that mpg is
+  continuous, etc.
+
+  \vfill
+  \part[5] What needs to be improved? (List 3 with short explanation
+  why.)
+
+  Many answers - misspellings in labels, poor labels, colors do not
+  reproduce in print, legend is redundant, different type of plot might have
+  fewer elements but convey the same information, etc.
+  
+  \vfill
+\end{parts}
+\newpage
+
+\section{R code}
+
+\addpoints
+\question[5] Match the R code with the expected output:
+<<echo=FALSE>>=
+set.seed(123)
+x = sample(1:6, 5)
+cat("x is:\n", x, "\n\n")
+cat("A. ", x[c(1,3)])
+cat("B. ", x[x <= 3])
+cat("C. ", x <= 5)
+cat("D. ", x[1:3])
+cat("E. ", x %in% c(1,2,3))
+@ 
+
+C. $\rule{1cm}{0.15mm}$ \texttt{x <= 5} \\[8pt]
+D. $\rule{1cm}{0.15mm}$ \texttt{x[ 1:3 ]} \\[8pt]
+E. $\rule{1cm}{0.15mm}$ \texttt{x \%in\% c(1, 2, 3)} \\[8pt]
+A. $\rule{1cm}{0.15mm}$ \texttt{x[ c(1, 3) ]} \\[8pt]
+B. $\rule{1cm}{0.15mm}$ \texttt{x[ x <= 3 ]}
+\vfill
+\question[5] Answer the following:
+<<echo=FALSE>>=
+dd = data.frame(x = letters[1:5], y = sample(1:5, 5), z = sample(c(TRUE,FALSE), 5, replace = TRUE))
+cat("The data.frame is:\n")
+print(dd)
+
+@ 
+\noaddpoints
+\begin{parts}
+  \part The column ``x'' is: $\rule{4cm}{0.15mm}$ (\textbf{character},
+  numeric, integer, or logical)\\[3pt]
+  \part The column ``y'' is: $\rule{4cm}{0.15mm}$ (character,
+  \textbf{numeric, integer}, or logical)\\[3pt]
+  \part The column ``z'' is: $\rule{4cm}{0.15mm}$ (character,
+  numeric, integer, or \textbf{logical})\\[3pt]
+  \part The result of \texttt{subset(my\_data\_frame, x == "{}a"{})}
+  has $\rule{2cm}{0.15mm}$ \textbf{1} rows?\\[3pt]
+  \part The result of \texttt{subset(my\_data\_frame, y >= 3)} has
+  $\rule{2cm}{0.15mm}$ \textbf{3} rows?
+\end{parts}
+\end{questions}
+\end{document}
